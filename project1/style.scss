@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    section{
+       background-size: cover;
+       background-position: center;
+       height: 100%;
+       flex-grow: 1;
+       transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+       cursor: pointer;
+    }
+    section:hover{
+        flex-grow: 3;
+    }
+
+    section:nth-child(1){
+        background-image: url(https://th.bing.com/th/id/OIP.j7WhNExwAJ2gHDZyV2D0uAHaNK?w=187&h=395&c=7&r=0&o=7&cb=12&dpr=1.5&pid=1.7&rm=3);
+        
+        
+
+    }
+
+    section:nth-child(2){
+        background-image: url(https://i.pinimg.com/474x/9c/ec/8a/9cec8aeb3b9172be3d747683b7b07c26.jpg);
+       
+    }
+    section:nth-child(3){
+        
+        background-image: url(https://i.pinimg.com/736x/82/8e/8f/828e8f0c650235ec129e572316ed2fc2.jpg);
+      
+    }
+    section:nth-child(4){
+        background-image: url(https://cf-img-a-in.tosshub.com/sites/visualstory/sportstak/uploads/2025/09/Pandya-27ITG-1758543697968.jpg?size=*:900);
+    
+    }
+     section:nth-child(5){
+        background-image: url(https://ss-i.thgim.com/public/incoming/c1p5jg/article68083410.ece/alternates/FREE_1200/20240411402L.jpg);
+       
+    }
+}
+
