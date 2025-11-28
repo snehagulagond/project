@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>University Registration From</h1>
+    <p>Please fill up the form</p>
+    <hr>
+
+    <form>
+        <h2>Personal Details</h2>
+
+        <label for="name">First Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <br><br>
+        <label for="surname">Last Name:</label>
+        <input type="text" name="surname" id="Last name" placeholder="Last Name">
+        <br><br>
+        <label for="DOB">DOB:</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+        <h2>Gender</h2>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio"name="gender" id="female">
+        <br>
+        <label>Other</label>
+        <input type="radio"name="gender">
+
+
+        <h3>Upload Your Photo</h3>
+
+        <input type="file" name="file">
+
+        <hr>
+
+        <h2>Contact Information</h2>
+
+        <label for="email">Email Addres:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your email">
+        <br><br>
+        <label for="Number">Phone Number:</label>
+        <input type="number" name="Number" id="phone" placeholder="Enter Your Phone Number">
+        <br><br>
+
+        <label for="Addres">Maling Address</label>
+        <br>
+        <textarea name="Addres" id="Addres" rows="5" cols="20"></textarea>
+
+        <hr>
+        <h2>Academic Information</h2>
+        <label for="course">Select Course</label>
+        <select name="course" id="course">
+            <option value="CSE">CSE</option>
+            <option value="ISE">ISE</option>
+            <option value="AIML">AIML</option>
+            <option value="DS">DS</option>
+        </select>
+        <br><br>
+
+        <h3>Extra Cirricular Activity</h3>
+        <label for="Sports">Sports</label>
+        <input type="checkbox" name="interst" id="Sports" value="Sports">
+        <br>
+        <label for="Music">Music</label>
+        <input type="checkbox" name="interst" id="Music" value="Music">
+        <br>
+        <label for="Technology">Technology</label>
+        <input type="checkbox" name="interst" id="Technology" value="Technology">
+        <br>
+        <label for="Voluntering">Voluntering</label>
+        <input type="checkbox" name="interst" id="Voluntering" value="Voluntering">
+        <br><br>
+        <hr>
+
+        <h2>Create Your Account</h2>
+
+        <label for="password">Create a password</label>
+        <input type="password" name="password" id="password">
+
+        <br><br>
+
+        <label for="secu">Security answer</label>
+        <input type="text" name="Security" id="secu">
+
+        <hr>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</body>
