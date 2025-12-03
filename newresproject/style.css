@@ -1,0 +1,352 @@
+:root{
+    --gray:#212121;
+    --green:#009660;
+    --white:#e9e9e9;
+    --black:#0c0c0c;
+    --lgray:#929292;
+}
+
+
+@font-face{
+    font-family:bharati;
+    src:url(./NeueMachina-Regular_DQCmjH1st.ttf)
+}
+@font-face{
+    font-family: hel;
+    src: url(./Helvetica_NTUXwLmxSC.ttf);
+}
+@font-face {
+    font-family: helb;
+    src: url(./HelveticaNowDisplay-Bold_VMHV5twUMR.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color:var(--black);
+}
+.green{
+    color: var(--green);
+}
+.lgray{
+    color: var(--lgray);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    position: fixed;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px 10px;
+    width: 300px;
+}
+.nav1 img{
+    height: 45px;
+
+}
+.nav1 h4{
+    font-family:bharati;
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+}
+.nav2 h4{
+    font-family: hel;
+    font-size: 16px;
+    font-weight: 900;
+}
+.nav3{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+.nav3 h4{
+    font-family: hel;
+    font-size: 16px;
+    font-weight: 900;
+}
+@media(max-width:600px){
+    nav{
+        padding: 13px 20px;
+    }
+    .nav1 img{
+        height: 30px;
+    }
+    .nav1 h4{
+        font-size: 12px;
+    }
+    .nav2{
+        display: none;
+    }
+    .nav3{
+        display: flex;
+    }
+}
+main{
+    padding-top: 100px;
+}
+.section1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px 50px;
+    font-family: hel;
+}
+.section1 .left{
+    
+    width:35%;
+    
+}
+.section1 .left h1{
+    font-size: 45px;
+    
+
+}
+.section1 .left .tags{
+    display: flex;
+    
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 10px 5px;
+    margin: 30px 0;
+}
+.left .price{
+    font-size: 35px;
+
+}
+.left .price .lgray{
+    font-size: 20px;
+    font-weight: 800;
+}
+.section1 .left .tags h4{
+    padding: 10px 20px;
+    border-radius: 4px;
+    white-space: nowrap;
+    background-color: var(--gray);
+}
+.section1 .left .cta{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.cta button{
+    background-color: var(--green);
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+.cta button:nth-child(2){
+    background-color: var(--gray);
+}
+
+
+.section1 .right .right-in{
+    
+    width: 800px;
+    
+    border-radius: 5px;
+    overflow: hidden;
+}
+.section1 .right .right-in .image{
+    width: 100%;
+    height: 350px;
+}
+.section1 .right .right-in .image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.section1 .right .right-in .image-bottom{
+    padding:20px ;
+    background-color: var(--gray);
+    padding-top: 40px;
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.right-in .image-bottom h4{
+     padding: 10px 15px;
+     background-color: #151515;
+     border-radius: 5px;
+     width: 45%;
+} 
+@media(max-width:1400px){
+    .section1 .left h1{
+        font-size: 3.5vw;
+    }
+}
+@media(max-width:800px){
+    main{
+    padding-top:50px;
+}
+    .section1{
+        flex-direction: column-reverse;
+        padding: 15px 5vw;
+    }  
+    .section1 .left{
+        width: 100%;
+        margin-top: 30px;
+    }  
+    .section1 .left h1{
+        font-size: 33px;
+    }
+    .section1 .right .right-in{
+    
+    width: 100%;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    }
+    .section1 .right .right-in .image{
+    width: 100%;
+    height: 50vw;
+    }
+    .section1 .right .right-in .image-bottom{
+        padding:20px ;
+        
+        padding-top: 40px;
+       
+        gap: 8px;
+       
+
+    }
+    .right-in .image-bottom h4{
+     padding: 6px 12px;
+     
+     border-radius: 5px;
+     font-size: 3vw;
+     width: 45%;
+    } 
+    .left .price{
+    font-size: 5vw;
+
+    }
+    .left .price .lgray{
+    font-size: 3vw;
+    font-weight: 800;
+    }
+    .section1 .left .tags h4{
+        padding: 7px 15px;
+        border-radius: 4px;
+        white-space: nowrap;
+        background-color: var(--gray);
+    }
+    .section1 .left .cta{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    .cta button{
+        background-color: var(--green);
+        padding: 15px 40px;
+        width: 50%;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+    }
+}
+@media(max-width:600px){
+    .section1 .left h1{
+        font-size: 5vw;
+    }
+}
+.section2{
+    padding: 100px 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section2 h1{
+    font-family: helb;
+    font-size: 120px;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+.section2 h1.bloom{
+    position: absolute;
+    filter: blur(60px);
+}
+.section2 h3{
+    font-size: 45px;
+    font-family: hel;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    font-weight: 120;
+}
+/*.section3{
+    
+    padding: 100px 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.section3 h2{
+    padding: 10px 20px;
+    border-radius: 4px;
+   
+    background-color: var(--black);
+    font-size: 120px;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-size: cover;
+    color: transparent;
+    position: relative;
+    background-clip: text;
+
+   
+      /*background-clip: text;
+    color: transparent;
+    position: relative;
+
+}
+.section3 h2.sty{
+    position: absolute;
+    filter: blur(60px);
+}*/
+@media(max-width:900px){
+    .section2 h1{
+    white-space: nowrap;
+    font-size: 15vw;
+    
+    }
+    .section2 h3{
+   text-align: center;
+    font-size: 4vw;
+    
+    }
+}
