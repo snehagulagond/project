@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#parent{
+    height: 100%;
+    width: 100%;
+}
+#child1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+@media (max-width:600px) and (min-width:200px){
+    #child1{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        border-radius: 50%;
+    }
+}
